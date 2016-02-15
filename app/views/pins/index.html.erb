@@ -1,0 +1,23 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Listing of Pins</h4><%= link_to 'New Pin', new_pin_path, class: "center" %></div>
+  <div class="panel-body">
+      <h6>Description</h6>
+  
+  
+    <% @pins.each do |pin| %>
+      <ul class="list-group">
+        <button type="button" class="list-group-item">
+          <%= pin.description %>
+          <%= link_to 'Show', pin %>
+          <%= link_to 'Edit', edit_pin_path(pin) %>
+          <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </button>
+      </ul>
+    <% end %>
+
+
+
+</div>
+</div>
