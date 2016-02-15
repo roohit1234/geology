@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-  <div class="panel-heading">Log in</div>
+  <div class="panel-heading"><h4>Log in</h4></div>
   <div class="panel-body">
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -20,10 +20,8 @@
     </div>
   <% end -%>
 
-  <br>
-
   <div class="actions">
-    <%= f.submit "Log in", class: 'btn btn-primary' %>
+    <%= f.submit "Log in", class: 'btn btn-lg btn-primary' %>
   </div>
 <% end %>
 
